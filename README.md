@@ -12,7 +12,7 @@ The code files are structured as follows:
 - **Network.py**: Includes the code that defines the network architecture. The defined
 network will be imported and referenced in Model.py.
 
-How to run the code
+# How to run the code
 
 To execute the program, the user needs to run main.py with the following command line parameters: main.py <mode> <data_dir> <save_dir>
 - <mode> is either ‘train’, ‘test’, or ‘predict’.
