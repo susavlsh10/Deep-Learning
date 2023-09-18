@@ -2,6 +2,31 @@
 
 This repository summarizes a deep learning model to perform 10-class image classification using the CIFAR-10 dataset. The model uses a variant of the ResNet architecture with Squeeze and Expand layers, ELU activation function, dropouts, extended input and linear layers. The highest accuracy achieved using the bottleneck architecture on the test data was 88.9%
 
+# Architecture 
+
+| Block Group | Output Size | Convolutional Layout |
+|-------------|------------|----------------------|
+| Stem        | 32x32      | `3 * 3, 16`          |
+|            |            | `3 * 3, 16`          |
+|            |            | `3 * 3, 16`          |
+|            |            | `* 1`                |
+| c2          | 32x32      | `1 * 1, 16`          |
+|            |            | `3 * 3, 16`          |
+|            |            | `1 * 1, 64`          |
+|            |            | `* 18`               |
+| c3          | 16x16      | `1 * 1, 32`          |
+|            |            | `3 * 3, 32`          |
+|            |            | `1 * 1, 128`         |
+|            |            | `* 18`               |
+| c4          | 8x8        | `1 * 1, 64`          |
+|            |            | `3 * 3, 64`          |
+|            |            | `1 * 1, 256`         |
+|            |            | `* 18`               |
+| Output      | 1x1        | [Dropout](#)         |
+|            |            | `4 * FClayers`       |
+|            |            | `* 1`                |
+
+
 The code files are structured as follows:
 
 - **main.py**: Includes the code that loads the dataset and performs the training, testing and prediction.
