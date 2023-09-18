@@ -14,7 +14,7 @@ network will be imported and referenced in Model.py.
 
 # How to run the code
 
-To execute the program, the user needs to run main.py with the following command line parameters: main.py <mode> <data_dir> <save_dir>
+To execute the program, the user needs to run main.py with the following command line parameters: main.py </mode/> <data_dir> <save_dir>
 - <mode> is either ‘train’, ‘test’, or ‘predict’.
 - <data_dir> is the directory where the training and test data are stored. An exampleof a valid directory: ‘../cifar-10-batches-py/’. 
 - <save_dir> is where the directory where the user wants to store the predictions onthe private test images. An example of a valid directory: ‘../saved_models/’
