@@ -25,8 +25,4 @@ To test the model, use ‘main.py test ../cifar-10-batches-py/ ../saved_models/�
 
 To predict on the private dataset, use ‘main.py predict../cifar-10-batches-py/ ../saved_models/’
 
-In the examples shown above, the assumption is that all the training and test dataset including the private dataset are stored in the folder  'cifar-10-batches-py'.
-This checkpoint file consists of a pretrained network which is used in the modes:‘test’ and ‘predict’. 
-By default, in modes ‘test’ and ‘predict’, the code will load the checkpointfile from the directory ‘../saved_models/’, and do the computations.
-
-The CIFAR 10 dataset needs to be stored in a directory named: 'cifar-10-batches-py' in an uncompressed format.
+The CIFAR 10 dataset needs to be stored in an uncompressed format.
