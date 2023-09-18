@@ -22,7 +22,7 @@ This repository summarizes a deep learning model to perform 10-class image class
 |            |            | `3 * 3, 64`          |
 |            |            | `1 * 1, 256`         |
 |            |            | `* 18`               |
-| Output      | 1x1        | `Dropout`         |
+| Output      | 1x1        | `\Dropout\`         |
 |            |            | `4 * FClayers`       |
 |            |            | `* 1`                |
 
