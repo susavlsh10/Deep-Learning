@@ -4,12 +4,12 @@ This repository summarizes a deep learning model to perform 10-class image class
 
 The code files are structured as follows:
 
-- main.py: Includes the code that loads the dataset and performs the training, testing and prediction.
-- DataLoader.py: Includes the code that defines functions related to data I/O.
-- ImageUtils.py: Includes the code that defines functions for any (pre-)processing of the images.
-- Configure.py: Includes dictionaries that set the model configurations, hyper-parameters, training settings, etc. The dictionaries are imported to main.py
-- Model.py: Includes the code that defines the your model in a class. The class is initialized with the configuration dictionaries and should have at least the methods “train(X, Y, configs,[X_valid, Y_valid,])”, “evaluate(X, Y)”, “predict_prob(X)”. The defined model class is imported to and referenced in main.py.
-- Network.py: Includes the code that defines the network architecture. The defined
+- **main.py**: Includes the code that loads the dataset and performs the training, testing and prediction.
+- **DataLoader.py**: Includes the code that defines functions related to data I/O.
+- **ImageUtils.py**: Includes the code that defines functions for any (pre-)processing of the images.
+- **Configure.py**: Includes dictionaries that set the model configurations, hyper-parameters, training settings, etc. The dictionaries are imported to main.py
+- **Model.py**: Includes the code that defines the your model in a class. The class is initialized with the configuration dictionaries and should have at least the methods “train(X, Y, configs,[X_valid, Y_valid,])”, “evaluate(X, Y)”, “predict_prob(X)”. The defined model class is imported to and referenced in main.py.
+- **Network.py**: Includes the code that defines the network architecture. The defined
 network will be imported and referenced in Model.py.
 
 How to run the code
@@ -31,5 +31,4 @@ The submission consists of a checkpoint file named “model-170.ckpt” in the �
 This checkpoint file consists of a pretrained network which is used in the modes:‘test’ and ‘predict’. 
 By default, in modes ‘test’ and ‘predict’, the code will load the checkpointfile from the directory ‘../saved_models/’, and do the computations.
 
-The CIFAR 10 dataset needs to be stored in a directory named: 'cifar-10-batches-py' in an uncompressed format on the same directory as the folder 'code'.
-It is also recommended to store the private test images on the same directoy as the CIFAR 10 dataset.
+The CIFAR 10 dataset needs to be stored in a directory named: 'cifar-10-batches-py' in an uncompressed format.
