@@ -1,6 +1,6 @@
 # ResNetX implementation
 
-This repository summarizes a deep learning model to perform 10-class image classification using the CIFAR-10 dataset. The model uses a variant of the ResNet architecture with Squeeze and Expand layers, ELU activation function, dropouts, extended input and linear layers. The highest accuracy achieved using the bottleneck architecture on the test data was 92%
+This repository summarizes a deep learning model to perform 10-class image classification using the CIFAR-10 dataset. The model uses a variant of the ResNet architecture with Squeeze and Expand layers, ELU activation function, dropouts, extended input and linear layers. The highest accuracy achieved using the bottleneck architecture was 88-92% on the test and the validation datasets.
 
 # Architecture 
 
